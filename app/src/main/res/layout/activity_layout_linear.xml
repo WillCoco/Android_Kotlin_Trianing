@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LinearLayoutActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#fff"
+        android:divider="@drawable/list_divider_1"
+        android:showDividers="beginning|middle"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#ccc"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="#ccc"
+                android:layout_weight="1" /><!-- 嵌套的weight影响性能，可以用相对布局减少嵌套层级-->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="#990000"
+                android:layout_weight="2" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#ffffff"
+            android:layout_weight="2">
+        </View>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#ccc"
+            android:layout_weight="1">
+        </View>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
