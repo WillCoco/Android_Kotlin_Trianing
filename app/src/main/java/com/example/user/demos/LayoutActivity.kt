@@ -24,8 +24,7 @@ class LayoutActivity : AppCompatActivity() {
             RelativeLayoutActivity::class.java,
             LinearLayoutActivity::class.java,
             LinearLayoutActivity::class.java,
-            LinearLayoutActivity::class.java,
-            LinearLayoutActivity::class.java,
+            FrameLayoutActivity::class.java,
             LinearLayoutActivity::class.java
     )
 

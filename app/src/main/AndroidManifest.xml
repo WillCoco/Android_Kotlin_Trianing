@@ -22,7 +22,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".EmptyActivity" />
         <activity android:name=".LinearLayoutActivity" />
-        <activity android:name=".RelativeLayoutActivity"></activity>
+        <activity android:name=".RelativeLayoutActivity" />
+        <activity android:name=".FrameLayoutActivity"></activity>
     </application>
 
 </manifest>
