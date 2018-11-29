@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log
 import android.view.MenuItem
 import android.widget.*
+import com.example.user.TableLayoutActivity
 
 import kotlinx.android.synthetic.main.activity_layout.*
 
@@ -23,7 +24,7 @@ class LayoutActivity : AppCompatActivity() {
             LinearLayoutActivity::class.java,
             RelativeLayoutActivity::class.java,
             LinearLayoutActivity::class.java,
-            LinearLayoutActivity::class.java,
+            TableLayoutActivity::class.java,
             FrameLayoutActivity::class.java,
             LinearLayoutActivity::class.java
     )

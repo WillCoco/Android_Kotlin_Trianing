@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.TableLayoutActivity">
+    <!--stretchColumns 第几列拉伸填满-->
+    <!--collapseColumns 隐藏第几列-->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns = "1"
+        android:collapseColumns = "0,2"
+        android:shrinkColumns="3"
+        >
+        <TableRow
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="#ccc"
+                android:text="one"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="#ff0000"
+                android:text="two"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:background="#ccc"
+                android:text="three"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:background="#ccc"
+                android:text="four"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:background="#ff0000"
+                android:text="five"/>
+        </TableRow>
+        <!--bottom不起作用？-->
+        <TableRow
+            android:gravity="bottom">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:background="#ff0000"
+                android:text="one"/>
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:background="#ccc"
+                android:text="two"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:background="#ff0000"
+                android:text="three"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:background="#ccc"
+                android:text="four"/>
+        </TableRow>
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>
