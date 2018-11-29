@@ -24,7 +24,8 @@
         <activity android:name=".LinearLayoutActivity" />
         <activity android:name=".RelativeLayoutActivity" />
         <activity android:name=".FrameLayoutActivity" />
-        <activity android:name="com.example.user.TableLayoutActivity"></activity>
+        <activity android:name="com.example.user.TableLayoutActivity" />
+        <activity android:name=".GridLayoutActivity"></activity>
     </application>
 
 </manifest>

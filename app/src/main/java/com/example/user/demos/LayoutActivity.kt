@@ -26,7 +26,7 @@ class LayoutActivity : AppCompatActivity() {
             LinearLayoutActivity::class.java,
             TableLayoutActivity::class.java,
             FrameLayoutActivity::class.java,
-            LinearLayoutActivity::class.java
+            GridLayoutActivity::class.java
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
