@@ -1,11 +1,11 @@
-package com.example.user.demos
+package com.example.user.demos.Layout
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MotionEvent
 import android.view.View
-import android.view.View.OnTouchListener
 import android.widget.FrameLayout
+import com.example.user.demos.R
 import com.example.user.drawable.DrawableView
 
 class FrameLayoutActivity : AppCompatActivity() {

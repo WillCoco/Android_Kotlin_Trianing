@@ -1,13 +1,12 @@
-package com.example.user
+package com.example.user.demos
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import com.example.user.demos.R
 
-class TableLayoutActivity : AppCompatActivity() {
+class TextViewActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_table_layout)
+        setContentView(R.layout.activity_text_view)
     }
 }

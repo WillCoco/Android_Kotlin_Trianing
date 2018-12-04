@@ -17,15 +17,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LayoutActivity"
+            android:name=".Layout.LayoutActivity"
             android:label="@string/title_activity_layout"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".EmptyActivity" />
-        <activity android:name=".LinearLayoutActivity" />
-        <activity android:name=".RelativeLayoutActivity" />
-        <activity android:name=".FrameLayoutActivity" />
-        <activity android:name="com.example.user.TableLayoutActivity" />
-        <activity android:name=".GridLayoutActivity"></activity>
+        <activity android:name=".Layout.LinearLayoutActivity" />
+        <activity android:name=".Layout.RelativeLayoutActivity" />
+        <activity android:name=".Layout.FrameLayoutActivity" />
+        <activity android:name=".Layout.TableLayoutActivity" />
+        <activity android:name=".Layout.GridLayoutActivity" />
+        <activity android:name=".Layout.AbsoluteLayoutActivity" />
+        <activity android:name=".TextViewActivity"></activity>
     </application>
 
 </manifest>

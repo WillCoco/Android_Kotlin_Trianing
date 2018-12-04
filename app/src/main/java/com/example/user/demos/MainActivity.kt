@@ -3,12 +3,11 @@ package com.example.user.demos
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.View
+import android.support.v7.widget.Toolbar
 import android.widget.AdapterView
-import android.widget.ArrayAdapter
 import android.widget.ListView
 import android.widget.SimpleAdapter
+import com.example.user.demos.Layout.LayoutActivity
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
@@ -22,7 +21,7 @@ class MainActivity : AppCompatActivity() {
 
     private val actives = arrayOf(
             LayoutActivity::class.java,
-            EmptyActivity::class.java,
+            TextViewActivity::class.java,
             EmptyActivity::class.java,
             EmptyActivity::class.java,
             EmptyActivity::class.java
@@ -32,6 +31,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val mActionBarToolbar = findViewById<Toolbar>(R.id.common_toolbar_top)
+        setSupportActionBar(mActionBarToolbar)
+
+        getSupportActionBar()?.setTitle("demo")
+        getSupportActionBar()?.setDisplayHomeAsUpEnabled(false)
 
         val listData = ArrayList<Map<String, Any>>()
         for ((index, _) in demoNames.withIndex()) {

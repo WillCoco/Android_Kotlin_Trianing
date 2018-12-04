@@ -1,15 +1,15 @@
-package com.example.user.demos
+package com.example.user.demos.Layout
 
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar
 import android.util.Log
 import android.view.MenuItem
 import android.widget.*
-import com.example.user.TableLayoutActivity
-
-import kotlinx.android.synthetic.main.activity_layout.*
+import com.example.user.demos.MainActivity
+import com.example.user.demos.R
 
 class LayoutActivity : AppCompatActivity() {
     val layouts = arrayOf(
@@ -23,7 +23,7 @@ class LayoutActivity : AppCompatActivity() {
     val actives = arrayOf(
             LinearLayoutActivity::class.java,
             RelativeLayoutActivity::class.java,
-            LinearLayoutActivity::class.java,
+            AbsoluteLayoutActivity::class.java,
             TableLayoutActivity::class.java,
             FrameLayoutActivity::class.java,
             GridLayoutActivity::class.java
@@ -32,8 +32,11 @@ class LayoutActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_layout)
+
+        val toolbar = findViewById<Toolbar>(R.id.common_toolbar_top)
         setSupportActionBar(toolbar)
 
+        getSupportActionBar()?.setTitle("layout")
         getSupportActionBar()?.setDisplayHomeAsUpEnabled(true)
 
         val list = findViewById<ListView>(R.id.layouts)
