@@ -8,12 +8,92 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/common_toolbar" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="dasdadjajsdj">
-
+            android:background="@drawable/shape1"
+            android:layout_margin="10dp"
+            android:text="渐变背景">
         </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_radius"
+            android:layout_margin="10dp"
+            android:text="圆角"/>
+        <TextView
+            android:id="@+id/text_view_drawable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/find"
+            android:drawableLeft="@drawable/find"
+            android:drawableRight="@drawable/find"
+            android:drawableBottom="@drawable/find"
+            android:drawablePadding="10dp"
+            android:text="带图片">
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ccc"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/home"
+                android:layout_centerInParent="true"
+                android:drawablePadding="2dp"
+                android:text="主页"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/find"
+                android:layout_centerInParent="true"
+                android:drawablePadding="2dp"
+                android:text="发现"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/me"
+                android:layout_centerInParent="true"
+                android:drawablePadding="2dp"
+                android:text="我"
+                android:layout_alignParentRight="true"
+                android:gravity="center"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="http://www.baidu.com"
+            android:autoLink="web"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13073637831"
+            android:autoLink="phone"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ke.xu@yimai.io"
+            android:autoLink="email"
+            android:layout_marginTop="10dp"/>
+
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
