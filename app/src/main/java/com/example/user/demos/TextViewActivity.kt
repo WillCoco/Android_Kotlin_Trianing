@@ -14,6 +14,8 @@ class TextViewActivity : AppCompatActivity() {
         val toolbar = findViewById<Toolbar>(R.id.common_toolbar_top)
         setSupportActionBar(toolbar)
         getSupportActionBar()?.setTitle("TextView")
+        getSupportActionBar()?.setDisplayHomeAsUpEnabled(true)
+        getSupportActionBar()?.setHomeButtonEnabled(true)
 
         val tView = findViewById<TextView>(R.id.text_view_drawable)
         val drawable = tView.getCompoundDrawables();

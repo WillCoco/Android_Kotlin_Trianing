@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
             "布局",
             "TextView",
             "Button",
-            "EditView",
+            "EditText",
             "自定义View"
     )
 
@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
             LayoutActivity::class.java,
             TextViewActivity::class.java,
             EmptyActivity::class.java,
-            EmptyActivity::class.java,
+            EditViewActivity::class.java,
             EmptyActivity::class.java
     )
 

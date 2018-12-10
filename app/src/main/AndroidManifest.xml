@@ -27,7 +27,8 @@
         <activity android:name=".Layout.TableLayoutActivity" />
         <activity android:name=".Layout.GridLayoutActivity" />
         <activity android:name=".Layout.AbsoluteLayoutActivity" />
-        <activity android:name=".TextViewActivity"></activity>
+        <activity android:name=".TextViewActivity" />
+        <activity android:name=".EditViewActivity"></activity>
     </application>
 
 </manifest>
