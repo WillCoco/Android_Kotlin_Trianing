@@ -7,6 +7,7 @@ import android.support.v7.widget.Toolbar
 import android.widget.AdapterView
 import android.widget.ListView
 import android.widget.SimpleAdapter
+import com.example.user.demos.Layout.ButtonActivity
 import com.example.user.demos.Layout.LayoutActivity
 import java.util.*
 
@@ -16,14 +17,16 @@ class MainActivity : AppCompatActivity() {
             "TextView",
             "Button",
             "EditText",
+            "RadioButton",
             "自定义View"
     )
 
     private val actives = arrayOf(
             LayoutActivity::class.java,
             TextViewActivity::class.java,
-            EmptyActivity::class.java,
+            ButtonActivity::class.java,
             EditViewActivity::class.java,
+            RadioButtonActivity::class.java,
             EmptyActivity::class.java
     )
 

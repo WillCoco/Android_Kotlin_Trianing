@@ -28,7 +28,9 @@
         <activity android:name=".Layout.GridLayoutActivity" />
         <activity android:name=".Layout.AbsoluteLayoutActivity" />
         <activity android:name=".TextViewActivity" />
-        <activity android:name=".EditViewActivity"></activity>
+        <activity android:name=".EditViewActivity" />
+        <activity android:name=".Layout.ButtonActivity" />
+        <activity android:name=".RadioButtonActivity"></activity>
     </application>
 
 </manifest>
