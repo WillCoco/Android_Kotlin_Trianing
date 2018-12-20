@@ -18,7 +18,8 @@ class MainActivity : AppCompatActivity() {
             "Button",
             "EditText",
             "RadioButton",
-            "自定义View"
+            "自定义View",
+            "Configuration"
     )
 
     private val actives = arrayOf(
@@ -27,7 +28,9 @@ class MainActivity : AppCompatActivity() {
             ButtonActivity::class.java,
             EditViewActivity::class.java,
             RadioButtonActivity::class.java,
-            EmptyActivity::class.java
+            EmptyActivity::class.java,
+            ConfigurationActivity::class.java
+
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.user.demos">
-
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -30,7 +30,9 @@
         <activity android:name=".TextViewActivity" />
         <activity android:name=".EditViewActivity" />
         <activity android:name=".Layout.ButtonActivity" />
-        <activity android:name=".RadioButtonActivity"></activity>
+        <activity android:name=".RadioButtonActivity" />
+        <activity android:name=".ConfigurationActivity"
+            android:configChanges="orientation|screenSize"></activity>
     </application>
 
 </manifest>
