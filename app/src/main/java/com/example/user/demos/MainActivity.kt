@@ -19,7 +19,8 @@ class MainActivity : AppCompatActivity() {
             "EditText",
             "RadioButton",
             "自定义View",
-            "Configuration"
+            "Configuration",
+            "AsyncTask"
     )
 
     private val actives = arrayOf(
@@ -29,7 +30,8 @@ class MainActivity : AppCompatActivity() {
             EditViewActivity::class.java,
             RadioButtonActivity::class.java,
             EmptyActivity::class.java,
-            ConfigurationActivity::class.java
+            ConfigurationActivity::class.java,
+            AsyncTaskActivity::class.java
 
     )
 
