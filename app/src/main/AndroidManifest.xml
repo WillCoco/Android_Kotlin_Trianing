@@ -36,7 +36,8 @@
         <activity
             android:name=".ConfigurationActivity"
             android:configChanges="orientation|screenSize" />
-        <activity android:name=".AsyncTaskActivity"></activity>
+        <activity android:name=".AsyncTaskActivity" />
+        <activity android:name=".NotificationActivity"></activity>
     </application>
 
 </manifest>

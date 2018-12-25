@@ -20,7 +20,8 @@ class MainActivity : AppCompatActivity() {
             "RadioButton",
             "自定义View",
             "Configuration",
-            "AsyncTask"
+            "AsyncTask",
+            "Notification通知栏"
     )
 
     private val actives = arrayOf(
@@ -31,8 +32,8 @@ class MainActivity : AppCompatActivity() {
             RadioButtonActivity::class.java,
             EmptyActivity::class.java,
             ConfigurationActivity::class.java,
-            AsyncTaskActivity::class.java
-
+            AsyncTaskActivity::class.java,
+            NotificationActivity::class.java
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
